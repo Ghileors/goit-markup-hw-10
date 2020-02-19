@@ -6,60 +6,64 @@
   padding-bottom: 100px;
 }
 
-.blog__subtile {
-  font-size: 18px;
-  line-height: 1.4;
-  margin: 0;
-  margin-top: 14px;
-  margin-bottom: 44px;
-}
+.blog {
+  &__subtile {
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 0;
+    margin-top: 14px;
+    margin-bottom: 44px;
+  }
 
-.blog__preview {
-  font-size: 14px;
-  line-height: 1.8;
-  margin: 0;
-  margin-bottom: 16px;
-}
+  &__preview {
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 0;
+    margin-bottom: 16px;
+  }
 
-.blog__subtile::after {
-  content: ' ';
-  display: block;
-  width: 136px;
-  height: 4px;
-  margin-right: auto;
-  margin-top: 12px;
-  background: center/ cover no-repeat
-    url(../images/icons/blog-subtitle-border.png);
-}
+  &__subtile {
+    &::after {
+      content: ' ';
+      display: block;
+      width: 136px;
+      height: 4px;
+      margin-right: auto;
+      margin-top: 12px;
+      background: center/ cover no-repeat
+        url(../images/icons/blog-subtitle-border.png);
+    }
+  }
 
-.blog__list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.blog__item {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  flex: 0 calc(100% / 3 - 30px);
-}
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 0 calc(100% / 3 - 30px);
 
-.blog__item:not(:last-child) {
-  margin-right: 30px;
-}
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 
-.blog__button {
-  display: flex;
-  width: 150px;
-  height: 50px;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid rgba(225, 225, 225, 0);
-  transition: var(--time-fun) var(--cubic-fun);
-}
+  &__button {
+    display: flex;
+    width: 150px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgba(225, 225, 225, 0);
+    transition: var(--time-fun) var(--cubic-fun);
 
-.blog__button:hover,
-.blog__button:focus {
-  border: 2px solid var(--light-bg-color);
+    &:hover,
+    &:focus {
+      border: 2px solid var(--light-bg-color);
+    }
+  }
 }

@@ -7,76 +7,78 @@
   padding-bottom: 136px;
 }
 
-.newsletter__title {
-  margin-bottom: 72px;
-}
-
-.newsletter__title::after {
-  content: ' ';
-  display: block;
-  width: 166px;
-  height: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 28px;
-  background: center/ cover no-repeat
-    url(../images/icons/newsletter-title-border.png);
-}
-
-.newsletter__subtitle {
-  margin-bottom: 42px;
-  color: var(--white-color);
-}
-
 .newsletter {
   text-align: center;
-}
 
-.newsletter__form {
-  display: flex;
-  justify-content: center;
+  &__title {
+    margin-bottom: 72px;
+
+    &::after {
+      content: ' ';
+      display: block;
+      width: 166px;
+      height: 15px;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 28px;
+      background: center/ cover no-repeat
+        url(../images/icons/newsletter-title-border.png);
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 42px;
+    color: var(--white-color);
+  }
+
+  &__form {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .submit {
   display: flex;
-}
 
-.submit__email {
-  border: 0;
-  padding: 0;
-  padding-left: 30px;
-  width: 450px;
-  height: 60px;
-  background-color: var(--white-color);
-}
+  &__email {
+    border: 0;
+    padding: 0;
+    padding-left: 30px;
+    width: 450px;
+    height: 60px;
+    background-color: var(--white-color);
+  }
 
-.submit__button {
-  position: relative;
-  width: 90px;
-  height: 56px;
-  /* background: no-repeat center/55% url(../images/icons/button-arrows.png)
-        #4ec6ab; */
-  border: 2px solid var(--white-color);
-  border-radius: 0px 5px 5px 0px;
-}
+  &__button {
+    position: relative;
+    width: 90px;
+    height: 56px;
+    /* background: no-repeat center/55% url(../images/icons/button-arrows.png)
+          #4ec6ab; */
+    border: 2px solid var(--white-color);
+    border-radius: 0px 5px 5px 0px;
 
-.submit__icon {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 70%;
-  height: 70%;
-  fill: var(--white-color);
-  transition: fill var(--time-fun) var(--cubic-fun);
-}
+    &:hover,
+    &:focus {
+      border: 2px solid var(--light-bg-color);
+    }
 
-.submit__button:hover,
-.submit__button:focus {
-  border: 2px solid var(--light-bg-color);
-}
+    &:hover,
+    &:focus {
+      &__icon {
+        fill: var(--light-bg-color);
+      }
+    }
+  }
 
-.submit__button:hover .submit__icon,
-.submit__button:focus .submit__icon {
-  fill: var(--light-bg-color);
+  &__icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 70%;
+    fill: var(--white-color);
+    transition: fill var(--time-fun) var(--cubic-fun);
+  }
 }

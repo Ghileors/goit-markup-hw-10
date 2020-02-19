@@ -15,15 +15,15 @@ body {
   font-weight: 700;
   font-size: 48px;
   color: var(--main-color);
-}
 
-.title::after {
-  content: ' ';
-  display: block;
-  width: 166px;
-  height: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 28px;
-  background: center/ cover no-repeat url(../images/icons/title-border.png);
+  &::after {
+    content: ' ';
+    display: block;
+    width: 166px;
+    height: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 28px;
+    background: center/ cover no-repeat url(../images/icons/title-border.png);
+  }
 }
