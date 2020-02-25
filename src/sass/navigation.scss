@@ -1,7 +1,7 @@
 /* HEADER */
 
 .user-section {
-  background-color: var(--bg-color);
+  background-color: $color-bg;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -12,11 +12,11 @@
 
   &__contact-list,
   &__authentication-list {
-    font-size: 14px;
-    line-height: 0.7;
-    font-weight: 300;
     display: flex;
     justify-content: space-around;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 0.7;
   }
 
   &__link {
@@ -38,14 +38,14 @@
   &__link {
     &:hover,
     &:focus {
-      color: var(--main-color);
+      color: $color-main;
     }
   }
 }
 
 .user-header__link:hover .user-header__icon,
 .user-header__link:focus .user-header__icon {
-  fill: var(--main-color);
+  fill: $color-main;
 }
 
 /* NAVIGATION */
@@ -61,44 +61,44 @@
   }
 
   &__logo {
-    font-family: var(--title-font-family);
     font-size: 30px;
+    font-family: $title-font-family;
     line-height: 1.06;
     text-transform: uppercase;
-    color: var(--main-color);
+    color: $color-main;
     margin-right: auto;
     padding: 10px;
 
     &::first-letter {
-      color: var(--bg-color);
       font-weight: 700;
+      color: $color-bg;
     }
 
     &:hover,
     &:focus {
-      color: var(--bg-color);
+      color: $color-bg;
     }
 
     &:hover::first-letter,
     &:focus::first-letter {
-      color: var(--main-color);
+      color: $color-main;
     }
   }
 
   &__link {
+    font-weight: 900;
     font-size: 14px;
     line-height: 0.7;
-    font-weight: 900;
     text-transform: uppercase;
-    color: var(--main-color);
+    color: $color-main;
     padding-top: 10px;
+    padding-right: 18px;
     padding-bottom: 10px;
     padding-left: 18px;
-    padding-right: 18px;
 
     &:hover,
     &:focus {
-      color: var(--bg-color);
+      color: $color-bg;
     }
   }
 }

@@ -1,29 +1,29 @@
 /* TYPOGRAPHY */
 
 body {
-  font-family: var(--main-font-faimily);
-  color: var(--main-color);
+  font-family: $main-font-faimily;
+  color: $color-main;
 }
 
 .title {
   position: relative;
-  margin: 0;
-  margin-bottom: 122px;
   text-align: center;
-  text-transform: uppercase;
-  font-family: var(--title-font-family);
   font-weight: 700;
   font-size: 48px;
-  color: var(--main-color);
+  font-family: $title-font-family;
+  text-transform: uppercase;
+  color: $color-main;
+  margin: 0;
+  margin-bottom: 122px;
 
   &::after {
     content: ' ';
     display: block;
     width: 166px;
     height: 15px;
+    margin-top: 28px;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 28px;
     background: center/ cover no-repeat url(../images/icons/title-border.png);
   }
 }

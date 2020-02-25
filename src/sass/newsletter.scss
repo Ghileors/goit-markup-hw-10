@@ -1,84 +1,82 @@
 /* NEWSLETTER SECTION */
 
 .newsletter-section {
-  background: center / cover no-repeat
-    url(../images/icons/newslatter-section-backgroung.png) var(--bg-color);
   padding-top: 102px;
   padding-bottom: 136px;
+  background: center / cover no-repeat
+    url(../images/icons/newslatter-section-backgroung.png) $color-bg;
 }
 
 .newsletter {
   text-align: center;
+}
 
-  &__title {
-    margin-bottom: 72px;
+.newsletter__title {
+  margin-bottom: 72px;
 
-    &::after {
-      content: ' ';
-      display: block;
-      width: 166px;
-      height: 15px;
-      margin-right: auto;
-      margin-left: auto;
-      margin-top: 28px;
-      background: center/ cover no-repeat
-        url(../images/icons/newsletter-title-border.png);
-    }
+  &::after {
+    content: ' ';
+    display: block;
+    width: 166px;
+    height: 15px;
+    margin-top: 28px;
+    margin-right: auto;
+    margin-left: auto;
+    background: center/ cover no-repeat
+      url(../images/icons/newsletter-title-border.png);
   }
+}
 
-  &__subtitle {
-    margin-bottom: 42px;
-    color: var(--white-color);
-  }
+.newsletter__subtitle {
+  margin-bottom: 42px;
+  color: var(--white-color);
+}
 
-  &__form {
-    display: flex;
-    justify-content: center;
-  }
+.newsletter__form {
+  display: flex;
+  justify-content: center;
 }
 
 .submit {
   display: flex;
+}
 
-  &__email {
-    border: 0;
-    padding: 0;
-    padding-left: 30px;
-    width: 450px;
-    height: 60px;
-    background-color: var(--white-color);
+.submit__email {
+  width: 450px;
+  height: 60px;
+  border: 0;
+  padding: 0;
+  padding-left: 30px;
+  background-color: var(--white-color);
+}
+
+.submit__button {
+  position: relative;
+  width: 90px;
+  height: 56px;
+  border: 2px solid var(--white-color);
+  border-radius: 0px 5px 5px 0px;
+
+  &:hover,
+  &:focus {
+    border: 2px solid $color-light-bg;
   }
 
-  &__button {
-    position: relative;
-    width: 90px;
-    height: 56px;
-    /* background: no-repeat center/55% url(../images/icons/button-arrows.png)
-          #4ec6ab; */
-    border: 2px solid var(--white-color);
-    border-radius: 0px 5px 5px 0px;
-
-    &:hover,
-    &:focus {
-      border: 2px solid var(--light-bg-color);
-    }
-
-    &:hover,
-    &:focus {
-      &__icon {
-        fill: var(--light-bg-color);
-      }
+  &:hover,
+  &:focus {
+    &__icon {
+      fill: $color-light-bg;
     }
   }
+}
 
-  &__icon {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 70%;
-    height: 70%;
-    fill: var(--white-color);
-    transition: fill var(--time-fun) var(--cubic-fun);
-  }
+.submit__icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 70%;
+  fill: var(--white-color);
+  transition: fill var(--time-fun) var(--cubic-fun);
 }

@@ -5,16 +5,16 @@
   align-items: center;
   justify-content: center;
   height: 600px;
-  background-color: var(--main-color);
+  background-color: $color-main;
   background: linear-gradient(
       to bottom right,
       rgba(0, 0, 0, 0.3),
       rgba(0, 0, 0, 0.3)
     ),
     url(../images/banner/banner.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .banner {
@@ -23,32 +23,35 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  &__title {
-    min-width: 1100px;
-    font-size: 48px;
-    margin: 0;
-    margin-bottom: 26px;
-    text-transform: uppercase;
-    color: var(--white-color);
-    &::first-line {
-      font-weight: 300;
-    }
+}
+
+.banner__title {
+  min-width: 1100px;
+  font-size: 48px;
+  text-transform: uppercase;
+  color: var(--white-color);
+  margin: 0;
+  margin-bottom: 26px;
+  &::first-line {
+    font-weight: 300;
   }
-  &__title--color {
-    color: var(--bg-color);
-  }
-  &__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 120px;
-    height: 42px;
-    text-transform: uppercase;
-    border: 2px solid rgba(225, 225, 225, 0);
-    &hover,
-    &focus {    
-      border: 2px solid var(--light-bg-color);
-      transition: var(--time-fun) var(--cubic-fun);
-    }
+}
+
+.banner__title--color {
+  color: $color-bg;
+}
+
+.banner__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 42px;
+  text-transform: uppercase;
+  border: 2px solid rgba(225, 225, 225, 0);
+  &:hover,
+  &:focus {
+    border: 2px solid $color-light-bg;
+    transition: var(--time-fun) var(--cubic-fun);
   }
 }

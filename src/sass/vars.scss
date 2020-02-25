@@ -1,13 +1,14 @@
-:root {
-  --main-font-faimily: 'Open Sans', sans-serif;
-  --title-font-family: 'Roboto', sans-serif;
-  --main-color: #515151;
-  --dark-grey: #323232;
-  --bg-color: #1abc9c;
-  --light-bg-color: #7fd9c8;
-  --section-bg-color: #e9f0fd;
+:root {  
   --black-color: #000000;
   --white-color: #ffffff;
   --time-fun: 250ms;
   --cubic-fun: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+$main-font-faimily: 'Open Sans', sans-serif;
+$title-font-family: 'Roboto', sans-serif;
+$color-main: #515151;
+$color-dark-grey: #323232;
+$color-bg: #1abc9c;
+$color-light-bg: #7fd9c8;
+$color-section-bg: #e9f0fd;

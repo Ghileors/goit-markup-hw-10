@@ -2,15 +2,15 @@
  * Все паршалы импортировать в этот файл
  */
 
-@import 'normalize.scss';
-@import 'base.scss';
-@import 'vars.scss';
-@import 'typografy.scss';
-@import 'stylization.scss';
-@import 'navigation.scss';
-@import 'banner.scss';
-@import 'about.scss';
-@import 'collection.scss';
-@import 'feature.scss';
-@import 'blog.scss';
-@import 'newsletter.scss';
+@import './vars.scss';
+@import './normalize.scss';
+@import './base.scss';
+@import './typography.scss';
+@import './stylization.scss';
+@import './navigation.scss';
+@import './banner.scss';
+@import './about.scss';
+@import './collection.scss';
+@import './feature.scss';
+@import './blog.scss';
+@import './newsletter.scss';

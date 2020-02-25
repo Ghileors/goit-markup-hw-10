@@ -14,7 +14,7 @@
 
 .button {
   all: unset;
-  background-color: var(--bg-color);
+  background-color: $color-bg;
   color: var(--white-color);
   cursor: pointer;
 }
